@@ -1,0 +1,61 @@
+import java.util.HashMap;
+
+public class OOPSDisplay {
+
+    public static HashMap<Character, String[]> buildPatternMap() {
+
+        HashMap<Character, String[]> map = new HashMap<>();
+
+        map.put('O', new String[]{
+                " * ",
+                "*   *",
+                "*   *",
+                "*   *",
+                " * "
+        });
+
+        map.put('P', new String[]{
+                "** ",
+                "*   *",
+                "** ",
+                "*    ",
+                "*    "
+        });
+
+        map.put('S', new String[]{
+                " **",
+                "*    ",
+                " * ",
+                "    *",
+                "** "
+        });
+
+        return map;
+    }
+
+    public static void printBanner(String message) {
+
+        HashMap<Character, String[]> patterns = buildPatternMap();
+        int height = 5;
+
+        for (int row = 0; row < height; row++) {
+
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < message.length(); i++) {
+
+                char ch = message.charAt(i);
+                String[] pattern = patterns.get(ch);
+
+                sb.append(pattern[row]);
+                sb.append("  ");
+            }
+
+            System.out.println(sb);
+        }
+    }
+
+    public static void main(String[] args) {
+        printBanner("OOPS");
+    }
+}
