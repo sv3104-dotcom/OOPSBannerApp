@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class CircleAreaCalculator {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        double radius;
+        double piValue = 3.14159;
+        double area;
+
+        System.out.print("Enter radius of circle: ");
+        radius = input.nextDouble();
+
+        area = piValue * radius * radius;
+
+        System.out.println("Area of Circle: " + area);
+    }
+}
