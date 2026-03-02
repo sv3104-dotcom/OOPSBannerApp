@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class EvenOddChecker {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        int number;
+        int remainder;
+        int divisor = 2;
+
+        System.out.print("Enter a number: ");
+        number = input.nextInt();
+
+        remainder = number % divisor;
+
+        if (remainder == 0) {
+            System.out.println("The number is Even.");
+        } else {
+            System.out.println("The number is Odd.");
+        }
+    }
+}

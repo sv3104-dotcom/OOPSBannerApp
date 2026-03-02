@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class DistanceCalculator {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        double distanceFromStartToVia;
+        double distanceViaToDestination;
+        double totalDistance;
+
+        System.out.print("Enter distance from Start to Via city: ");
+        distanceFromStartToVia = input.nextDouble();
+
+        System.out.print("Enter distance from Via city to Destination: ");
+        distanceViaToDestination = input.nextDouble();
+
+        totalDistance = distanceFromStartToVia + distanceViaToDestination;
+
+        System.out.println("Total Distance: " + totalDistance);
+    }
+}
