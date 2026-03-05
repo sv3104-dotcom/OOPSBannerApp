@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class EvenOddCheck {
+
+    public static void main(String[] args) {
+
+        // Create scanner object
+        Scanner input = new Scanner(System.in);
+
+        // Declare variable
+        int number;
+
+        // Get number from user
+        System.out.print("Enter a number: ");
+        number = input.nextInt();
+
+        // Check if number is even or odd
+        if (number % 2 == 0) {
+
+            // Display even result
+            System.out.println("The number is Even");
+
+        } else {
+
+            // Display odd result
+            System.out.println("The number is Odd");
+        }
+    }
+}
