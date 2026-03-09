@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+// Program to calculate total, percentage and grade of a student
+class StudentGradeCalculator {
+
+    public static void main(String[] args) {
+
+        // Creating Scanner object for input
+        Scanner input = new Scanner(System.in);
+
+        // Variable declaration for user inputs
+        double subjectOneMarks;
+        double subjectTwoMarks;
+        double subjectThreeMarks;
+
+        // Variable declaration for results
+        double totalMarks;
+        double percentage;
+        String grade;
+
+        // Fixed value
+        double totalNumberOfSubjects = 3;
+
+        // Taking user inputs
+        System.out.print("Enter marks for Subject 1: ");
+        subjectOneMarks = input.nextDouble();
+
+        System.out.print("Enter marks for Subject 2: ");
+        subjectTwoMarks = input.nextDouble();
+
+        System.out.print("Enter marks for Subject 3: ");
+        subjectThreeMarks = input.nextDouble();
+
+        // Calculating total
+        totalMarks = subjectOneMarks + subjectTwoMarks + subjectThreeMarks;
+
+        // Calculating percentage
+        percentage = totalMarks / totalNumberOfSubjects;
+
+        // Grade calculation using conditional statements
+        if (percentage >= 90) {
+            grade = "A";
+        } else if (percentage >= 75) {
+            grade = "B";
+        } else if (percentage >= 50) {
+            grade = "C";
+        } else {
+            grade = "Fail";
+        }
+
+        // Displaying results
+        System.out.println("Total Marks: " + totalMarks);
+        System.out.println("Percentage: " + percentage);
+        System.out.println("Grade: " + grade);
+    }
+}

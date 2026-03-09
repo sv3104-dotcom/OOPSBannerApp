@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class SumOfTwoNumbers {
+
+    public static void main(String[] args) {
+
+        // Create scanner object for user input
+        Scanner input = new Scanner(System.in);
+
+        // Declare variables
+        double firstNumber;
+        double secondNumber;
+        double sum;
+
+        // Get first number from user
+        System.out.print("Enter first number: ");
+        firstNumber = input.nextDouble();
+
+        // Get second number from user
+        System.out.print("Enter second number: ");
+        secondNumber = input.nextDouble();
+
+        // Calculate sum
+        sum = firstNumber + secondNumber;
+
+        // Display result
+        System.out.println("Sum = " + sum);
+    }
+}

@@ -1,0 +1,33 @@
+// Program Name: LargestNumber
+import java.util.Scanner;
+
+public class LargestNumber {
+
+    public static void main(String[] args) {
+
+        // Create scanner object
+        Scanner input = new Scanner(System.in);
+
+        // Declare variables
+        double firstNumber;
+        double secondNumber;
+
+        // Get numbers from user
+        System.out.print("Enter first number: ");
+        firstNumber = input.nextDouble();
+
+        System.out.print("Enter second number: ");
+        secondNumber = input.nextDouble();
+
+        // Check which number is larger
+        if (firstNumber > secondNumber) {
+
+            // Display first number as largest
+            System.out.println("Largest number is " + firstNumber);
+
+        } else {
+
+            System.out.println("Largest number is " + secondNumber);
+        }
+    }
+}
