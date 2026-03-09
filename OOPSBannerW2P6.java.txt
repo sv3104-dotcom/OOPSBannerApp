@@ -1,0 +1,29 @@
+// Program Name: FactorialProgram
+import java.util.Scanner;
+
+public class FactorialProgram {
+
+    public static void main(String[] args) {
+
+        // Create scanner object
+        Scanner input = new Scanner(System.in);
+
+        // Declare variables
+        int number;
+        int factorial = 1;
+        int i;
+
+        // Get number from user
+        System.out.print("Enter a number: ");
+        number = input.nextInt();
+
+        // Calculate factorial using loop
+        for (i = 1; i <= number; i++) {
+
+            factorial = factorial * i;
+        }
+
+        // Display factorial
+        System.out.println("Factorial = " + factorial);
+    }
+}
